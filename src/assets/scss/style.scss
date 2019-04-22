@@ -20,13 +20,13 @@ body {
   width: 100%;
   position: fixed;
   top: 0;
-  transition: .2s;
+  transition: 0.5s;
   &-wrapper{
     @include setflex;
     justify-content: space-between;
     width: 100%;
-    background-color: #fff;
     padding: 10px 20px;
+    transition: 0.5s;
   }
   &-menu {
     li {
@@ -39,4 +39,37 @@ body {
       color: #000;
     }
   }
+}
+.one {
+  @include setflex;
+  flex-direction: column;
+  width: 100%;
+  height: 500px;
+  background-color: #aaa;
+}
+.two {
+  @include setflex;
+  flex-direction: column;
+  width: 100%;
+  height: 700px;
+  background-color: #777;
+}
+.three {
+  @include setflex;
+  flex-direction: column;
+  width: 100%;
+  height: 1000px;
+  background-color: #111;
+  color: #fff;
+}
+
+
+/* for js */
+.menu-bg {
+  background-color: #fff;
+  transition: .5s;
+}
+.menu-width {
+  width: 70%;
+  transition: .5s;
 }
