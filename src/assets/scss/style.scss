@@ -1,0 +1,42 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+@mixin setflex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+.button {
+  text-decoration: none;
+  color: #000;
+  border: 2px #000 solid;
+  padding: 10px;
+  border-radius: 20px;
+}
+.nav {
+  @include setflex;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  transition: .2s;
+  &-wrapper{
+    @include setflex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: #fff;
+    padding: 10px 20px;
+  }
+  &-menu {
+    li {
+      display: inline;
+      margin-left: 15px;
+    }
+    list-style-type: none;
+    &__link {
+      text-decoration: none;
+      color: #000;
+    }
+  }
+}
