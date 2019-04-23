@@ -1,5 +1,5 @@
-var positionHeight = 500;
-var scrollPosition = 0;
+const positionHeight = 500;
+let scrollPosition = 0;
 window.onscroll = function() {
   var scrollPosition = window.pageYOffset;
   document.getElementById('showScroll').innerHTML = scrollPosition + ' px';
