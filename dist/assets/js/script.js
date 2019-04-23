@@ -1,7 +1,7 @@
 var positionHeight = 500;
 var scrollPosition = 0;
 window.onscroll = function() {
-  var scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
+  var scrollPosition = window.pageYOffset;
   document.getElementById('showScroll').innerHTML = scrollPosition + ' px';
   if (scrollPosition > 0) {
     document.getElementById('nav').classList.add('menu-bg');
